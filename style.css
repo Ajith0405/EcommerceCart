@@ -27,11 +27,11 @@
     font-weight:900;
     color:#FF3FA4 ;
 }
-#navbarSupportedContent a{
+#collapsibleNavbar a{
     color: #fff;
     
 }
-#navbarSupportedContent a:hover{
+#collapsibleNavbar a:hover{
     border-bottom: 2px solid goldenrod;
 }
 .navbar-toggler{
@@ -49,6 +49,18 @@
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card-img-top{
+    border-radius:25px;
+}
+.card-title{
+    font-weight: 600;
+}
+.Item-price{
+    font-weight: 500;
+}
+.Item-price::before{
+    content: 'Price : ';
 }
 #product{
     background: #e5e5e5;
@@ -68,10 +80,23 @@
     font-size: 13px;
     margin-bottom: 15px;
 }
+.offcanvas-header{
+    border-radius: 0px 0px 10px 10px;
+}
+.offcanvas .offcanvas-title{
+    color:#FF3FA4 !important;
+    font-weight: 500;
+}
 .cart-head{
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
+    font-weight: 500;
+}
+.cart-remove{
+    color: red;
+}
+.cart-title{
+    font-weight: 500;
 }
 .total{
     display: flex;
@@ -86,4 +111,30 @@
     height: 15vh;
     background-color: black;
     border-radius: 8px 8px 0px 0px;
+}
+
+.wrapper{
+    height: 40px;
+    min-width:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wrapper span.num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
 }

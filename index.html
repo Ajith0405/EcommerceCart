@@ -12,19 +12,21 @@
     <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><i class="fa-brands fa-shopify fa-bounce fa-xl" style="color: #df2099;"></i> &nbsp;GoShop</a>
-          <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item mx-auto count-box">
-                <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                Cart &nbsp;<span class="badge bg-danger rounded-5"></span></a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            
+              <ul class="navbar-nav mb-lg-0 ">
+                <li class="nav-item mx-auto">
+                  <a class="nav-link me-3 " href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-auto count-box">
+                  <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                  Cart &nbsp;<span class="badge bg-danger rounded-5"></span></a>
+                </li>
+              </ul>
+          
           </div>
         </div>
       </nav>
@@ -137,19 +139,19 @@
         </div>
       </footer>
       <div class="offcanvas offcanvas-end" id="demo">
-        <div class="offcanvas-header">
-          <h1 class="offcanvas-title text-center">Cart Items</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-header bg-dark">
+          <h1 class="offcanvas-title mx-auto text-light">Cart Items</h1>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="cart-content">
+            <div class="cart-content" >
             </div>
-            <div class="total mt-3">
-                <div class="total-title h3">Total</div>
+            <div class="total mt-3 pt-2 bg-info" style="border-radius: 10px;">
+                <div class="total-title h3">Total Price: </div>
                 <div class="total-price h4">Rs.0</div>
             </div>
             <div class="place-btn d-flex justify-content-center mt-2">
-                <button class="place btn btn-success">Place Order</button>
+                <button class="place btn " style="background-color: orangered; color: #fff;">PLACE ORDER</button>
             </div>
         </div>
       </div>
